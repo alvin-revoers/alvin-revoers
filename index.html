@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvin Revoer — Premium</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+    <div class="glass-card">
+
+        <!-- LOCK SCREEN -->
+        <div id="lockScreen">
+            <div class="badge"><i class="fas fa-lock" style="margin-right: 6px;"></i> Private Access</div>
+            <h1>Alvin Revoer</h1>
+            <p class="sub"><i class="fas fa-gem" style="margin-right: 8px; color: #5f7dff;"></i> Premium · Tanpa Batas</p>
+
+            <div class="key-input-group">
+                <input type="password" id="keyInput" placeholder="Masukkan kunci akses" />
+                <button class="btn-primary" id="unlockBtn"><i class="fas fa-arrow-right"></i> Buka</button>
+            </div>
+            <div id="errorMsg" class="error-msg" style="display: none;">Password salah, silakan hubungi admin.</div>
+
+            <a href="#" class="whatsapp-link" id="waLink">
+                <i class="fab fa-whatsapp"></i> Hubungi Admin
+            </a>
+        </div>
+
+        <!-- DASHBOARD -->
+        <div id="dashboard">
+            <div class="dash-header">
+                <h2><i class="fas fa-car" style="color: #5f7dff; margin-right: 10px;"></i>Garasi Premium</h2>
+                <span class="user-badge"><i class="fas fa-check-circle" style="color: #3bcc7a; margin-right: 6px;"></i> Akses aktif</span>
+            </div>
+            <div class="table-grid" id="carGrid"></div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <button class="close-btn" id="modalClose">&times;</button>
+            <div class="modal-img" id="modalImg"><i class="fas fa-car"></i></div>
+            <h2 id="modalTitle">Nama</h2>
+            <div class="badge-type" id="modalType">Sport</div>
+            <div class="full-story" id="modalStory">Cerita lengkap...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
